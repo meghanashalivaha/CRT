@@ -15,7 +15,11 @@ def heapifyUp(nums,index):
         if(nums[index]<nums[parent]):
             nums[index],nums[parent]=nums[parent],nums[index]
             heapifyUp(nums,parent)
-nums=[1,4,5,6,7,10,6,3,2]
+nums=[]
+l=int(input())
+for i in range(l):
+    num=int(input())
+    nums.append(na)
 n=int(input())
 for _ in range(0,n):
     index=int(input())
