@@ -15,13 +15,20 @@ def heapifyUp(nums,index):
         if(nums[index]>nums[parent]):
             nums[index],nums[parent]=nums[parent],nums[index]
             heapifyUp(nums,parent)
-nums=[10,7,6,4,5,4,5,3,2]
-index=6
-value=15
-if(nums[index]>value):
-    nums[index]=value
-    heapifyDown(nums,value)
-if(nums[index]<value):
-    nums[index]=value
-    heapifyUp(nums,index)
-print(nums)
+nums=[]
+l=int(input())
+for i in range(l):
+    num=int(input())
+    nums.append(na)
+n=int(input())
+for _ in range(0,n):
+    index=int(input())
+    value=int(input())
+
+    if(nums[index]>value):
+        nums[index]=value
+        heapifyDown(nums,value)
+    if(nums[index]<value):
+        nums[index]=value
+        heapifyUp(nums,index)
+    print(nums)
